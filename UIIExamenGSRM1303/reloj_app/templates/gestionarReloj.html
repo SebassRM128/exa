@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block titulo %} Gestion Relojeria{% endblock %}
+
+{% block  cuerpo %}
+    <h1>Gestionar Relojeria Sebastian Rojas</h1>
+
+    {% for m in losrelojes %}
+    <li> {{m.id}} --- {{m.marca}} --- {{m.modelo}} --- {{m.tipo}} --- {{m.material}} --- {{m.precio}} --- {{m.ano_lanzamiento}}</li>
+    {% endfor %}
+{% endblock %}
